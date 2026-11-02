@@ -55,6 +55,15 @@ body {
     cursor: pointer;
 }
 
+.hamburger-btn {
+    display: none;
+    font-size: 32px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #e63946;
+}
+
 .banner {
     background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('img/banner.jpg') center/cover;
     height: 800px;
@@ -195,15 +204,44 @@ footer {
 
 @media (max-width: 768px) {
     .navbar {
-        flex-direction: column;
+        flex-wrap: wrap; 
         padding: 16px;
-        gap: 16px;
+    }
+
+    .hamburger-btn {
+        display: block; 
     }
 
     .nav-links {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 12px;
+        display: none; 
+        flex-direction: column;
+        width: 100%;
+        margin-top: 16px;
+        background-color: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        gap: 0;
+    }
+
+    .nav-links li {
+        width: 100%;
+        border-bottom: 1px solid #eeeeee;
+    }
+
+    .nav-links li:last-child {
+        border-bottom: none;
+        padding: 16px;
+        text-align: center;
+    }
+
+    .nav-links a {
+        display: block;
+        padding: 16px;
+        text-align: center;
+    }
+
+    .nav-links.show-menu {
+        display: flex;
     }
 
     .banner h1 {
@@ -257,3 +295,4 @@ footer {
 .close-btn:hover {
     color: #e63946;
 }
+

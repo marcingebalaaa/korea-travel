@@ -1,3 +1,5 @@
+//galeria
+
 const popup = document.getElementById("image-popup");
 const zoomedImg = document.getElementById("zoomed-img");
 const closeBtn = document.querySelector(".close-btn");
@@ -18,4 +20,13 @@ popup.addEventListener("click", function(event) {
     if (event.target === popup) {
         popup.style.display = "none";
     }
+});
+
+//menu hamburger
+
+const hamburgerBtn = document.querySelector(".hamburger-btn");
+const navLinks = document.querySelector(".nav-links");
+
+hamburgerBtn.addEventListener("click", function() {
+    navLinks.classList.toggle("show-menu");
 });
