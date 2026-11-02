@@ -192,3 +192,33 @@ footer {
 .gallery-img:hover {
     transform: scale(1.02);
 }
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 16px;
+        gap: 16px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .banner h1 {
+        font-size: 36px;
+    }
+
+    .banner p {
+        font-size: 16px;
+    }
+
+    .section-padding {
+        padding: 40px 16px; 
+    }
+
+    .section-padding h2 {
+        font-size: 28px;
+    }
+}
