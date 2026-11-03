@@ -30,3 +30,19 @@ const navLinks = document.querySelector(".nav-links");
 hamburgerBtn.addEventListener("click", function() {
     navLinks.classList.toggle("show-menu");
 });
+
+//tryb ciemny
+
+const themeBtn = document.querySelector(".theme-btn");
+
+if (themeBtn) {
+    themeBtn.addEventListener("click", function() {
+        document.body.classList.toggle("dark-mode");
+        
+        if (document.body.classList.contains("dark-mode")) {
+            themeBtn.textContent = "Tryb Jasny";
+        } else {
+            themeBtn.textContent = "Tryb Ciemny";
+        }
+    });
+}
