@@ -4,11 +4,23 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 60px;
+}
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #ffffff;
     color: #333333;
     line-height: 1.6;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: #f8f9fa;
 }
 
 .navbar {
@@ -17,9 +29,6 @@ body {
     align-items: center; 
     background-color: #f8f9fa;
     padding: 16px 32px;
-    position: sticky; 
-    top: 0;
-    z-index: 100; 
 }
 
 .logo {
